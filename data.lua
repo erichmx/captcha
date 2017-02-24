@@ -47,7 +47,7 @@ function data.loadY(dir)
 end
 
 function data.loadX(dir,N,dH,dW)
-    local dH = dH or 50
+    local dH = dH or 50 -- CHANGE size or send as params
     local dW = dW or 200
     local function readX(dir,i,b)
         local X = torch.zeros(b,dH,dW)

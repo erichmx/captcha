@@ -9,7 +9,7 @@ function models.cnnModel(k,c)
 -- Will use "ceil" MaxPooling because we want to save as much
 -- space as we can
     local vgg = nn.Sequential()
-    vgg:add(nn.Reshape(1,50,200))
+    vgg:add(nn.Reshape(1,50,200)) -- CHANGE size later
 
     local backend_name = 'nn'
 
